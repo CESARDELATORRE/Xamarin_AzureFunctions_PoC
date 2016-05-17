@@ -95,7 +95,7 @@ namespace Xamarin_AzureFunctions_PoC
 
         }
 
-        //(CDLTLL) Hardcoded code easier to see the example
+        //(CDLTLL) Hardcoded code easier to see the example --
         public async Task<List<Vehicle>> GetVehiclesHardCodedAsync()
         {
             var client = new System.Net.Http.HttpClient();            
@@ -108,7 +108,7 @@ namespace Xamarin_AzureFunctions_PoC
             return listOfVehicles;
         }
 
-        //(CDLTLL) Using Base class so code is re-used across requests
+        //(CDLTLL) Using Base class so code is re-used across requests --
         public async Task<List<Vehicle>> GetVehiclesAsync(string make)
         {
             string url = $"{_UrlPrefix}api/HttpTriggerVehicleList?code=mi11r1elo9fwd2cafw5ozctgy8yug8fr0cjc&make={make}";
